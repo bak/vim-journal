@@ -43,4 +43,9 @@ g:GPGDefaultRecipients
     If set, these recipients are used as defaults when no other recipient is
     defined. This variable is a Vim list. Default is unset.
 
+TEMPLATES
+
+If journal.vim finds a file named "template" in the journal_directory, its
+contents will be used to create all new entries.
+
 vim:tw=78:et:ft=help:norl:
