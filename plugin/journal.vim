@@ -21,6 +21,8 @@ if !exists("g:journal_extension")
     let g:journal_extension = exists('g:journal_encrypted') ? 'asc' : 'txt'
 endif
 
+let g:journal_template = expand("%:p:h")."/template".g:journal_extension
+
 command -bar JournalToggle :call s:JournalToggle()
 
 function! s:SID() "{{{1
